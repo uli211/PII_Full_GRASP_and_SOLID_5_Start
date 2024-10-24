@@ -20,7 +20,7 @@ namespace Full_GRASP_And_SOLID
             Equipment cafetera = new Equipment("Cafetera", 50);
             Equipment hervidor = new Equipment("Hervidor", 40);
 
-            IRecipe receta = new Recipe();
+            IPrintable receta = new Recipe();
             receta.FinalProduct = new Product("Café con leche", 0);
 
             receta.AddStep(cafe, 100, cafetera, 120);

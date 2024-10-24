@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID
 {
-    public class Recipe:IRecipe
+    public class Recipe:IPrintable
     {
         private List<Step> steps = new List<Step>();
         public Product FinalProduct { get; set; }
