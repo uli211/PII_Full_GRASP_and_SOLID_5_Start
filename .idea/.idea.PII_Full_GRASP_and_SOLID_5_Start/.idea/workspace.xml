@@ -7,96 +7,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb976856-7b4e-4ae9-98b6-005c9b0a7e80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Library/IRecipe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PII_Full_GRASP_and_SOLID_5_Start/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PII_Full_GRASP_and_SOLID_5_Start/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library/BaseStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/BaseStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library/Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Equipment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library/Recipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Recipe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library/Step.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Step.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library/WaitStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/WaitStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="3d3d429d-46b5-4251-9779-1bc8e8df5725" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="ulises" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;uli211&quot;
-  }
-}</component>
-  <component name="GitToolBoxStore">
-    <option name="recentBranches">
-      <RecentBranches>
-        <option name="branchesForRepo">
-          <list>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="ulises" />
-                    <option name="lastUsedInstant" value="1729695648" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1729695641" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
-            </RecentBranchesForRepo>
-          </list>
-        </option>
-      </RecentBranches>
-    </option>
-  </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/uli211/PII_Full_GRASP_and_SOLID_5_Start.git&quot;,
-    &quot;accountId&quot;: &quot;0dd8b4d1-fb4e-4f49-8e1f-23189176afdf&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2nolc1nH9Z6kpxowxXWnGNM6r1K" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2nszLsQ2HjsSbRO7AzTXwSVr5WU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Project.Program.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "ulises",
+    "git-widget-placeholder": "isa",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\ulise\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\ulise\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\ulise\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\Isabela\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Isabela\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Isabela\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -123,15 +66,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bb976856-7b4e-4ae9-98b6-005c9b0a7e80" name="Changes" comment="" />
-      <created>1729647386779</created>
+      <changelist id="3d3d429d-46b5-4251-9779-1bc8e8df5725" name="Changes" comment="" />
+      <created>1729776528166</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1729647386779</updated>
-      <workItem from="1729647389193" duration="1795000" />
-      <workItem from="1729688895613" duration="2854000" />
-      <workItem from="1729695198068" duration="252000" />
-      <workItem from="1729695627069" duration="158000" />
+      <updated>1729776528166</updated>
+      <workItem from="1729776542045" duration="689000" />
     </task>
     <servers />
   </component>
@@ -139,17 +79,6 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
