@@ -9,58 +9,46 @@ using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID
 {
-    public class Recipe
+    public class Recipe:IPrintable
     {
-        // Cambiado por OCP
-        private IList<BaseStep> steps = new List<BaseStep>();
-
+        private List<Step> steps = new List<Step>();
         public Product FinalProduct { get; set; }
 
-        // Agregado por Creator
-        public void AddStep(Product input, double quantity, Equipment equipment, int time)
+        // Método para agregar un paso a la receta
+        public void AddStep(Product product, int quantity, Equipment equipment, int time)
         {
-            Step step = new Step(input, quantity, equipment, time);
-            this.steps.Add(step);
+            steps.Add(new ProductStep(product, quantity, equipment, time));
         }
 
-        // Agregado por OCP y Creator
-        public void AddStep(string description, int time)
+        // Método para agregar un paso de espera
+        public void AddStep(string action, int time)
         {
-            WaitStep step = new WaitStep(description, time);
-            this.steps.Add(step);
+            steps.Add(new WaitStep(action, time));
         }
 
-        public void RemoveStep(BaseStep step)
+        // Método para calcular el costo total de producción
+        public int GetProductionCost()
         {
-            this.steps.Remove(step);
+            int totalCost = 0;
+            foreach (var step in steps)
+            {
+                totalCost += step.GetCost();
+            }
+
+            return totalCost;
         }
 
-        // Agregado por SRP
+        // Método para obtener el texto de la receta
         public string GetTextToPrint()
         {
-            string result = $"Receta de {this.FinalProduct.Description}:\n";
-            foreach (BaseStep step in this.steps)
+            string description = $"Receta para: {FinalProduct.Name}\n";
+            foreach (var step in steps)
             {
-                result = result + step.GetTextToPrint() + "\n";
+                description += step.GetDescription() + "\n";
             }
 
-            // Agregado por Expert
-            result = result + $"Costo de producción: {this.GetProductionCost()}";
-
-            return result;
-        }
-
-        // Agregado por Expert
-        public double GetProductionCost()
-        {
-            double result = 0;
-
-            foreach (BaseStep step in this.steps)
-            {
-                result = result + step.GetStepCost();
-            }
-
-            return result;
+            description += $"Costo total de producción: {GetProductionCost()}";
+            return description;
         }
     }
 }

@@ -6,25 +6,25 @@
 
 namespace Full_GRASP_And_SOLID
 {
-    // Agregada por OCP
-    public class WaitStep : BaseStep
+    public class WaitStep : Step
     {
-        public WaitStep(string descrption, int time)
-            : base(time)
+        private string action;
+        private int time; // en minutos
+
+        public WaitStep(string action, int time)
         {
-            this.Description = descrption;
+            this.action = action;
+            this.time = time;
         }
 
-        public string Description { get; set; }
-
-        public override double GetStepCost()
+        public override int GetCost()
         {
-            return this.Time;
+            return 0;
         }
 
-        public override string GetTextToPrint()
+        public override string GetDescription()
         {
-            return $"Esperando '{this.Description}' durante {this.Time}";
+            return $"Esperando '{action}' durante {time}";
         }
     }
 }

@@ -6,36 +6,37 @@
 
 namespace Full_GRASP_And_SOLID
 {
-    // Modificada por OCP
-    public class Step : BaseStep
+    public abstract class Step
     {
-        public Step(Product input, double quantity, Equipment equipment, int time)
-            : base(time)
+        public abstract int GetCost();
+        public abstract string GetDescription();
+    }
+
+// Clase para un paso que utiliza un producto y un equipo
+    public class ProductStep : Step
+    {
+        private Product product;
+        private int quantity;
+        private Equipment equipment;
+        private int time; // en minutos
+
+        public ProductStep(Product product, int quantity, Equipment equipment, int time)
         {
-            this.Quantity = quantity;
-            this.Input = input;
-            this.Equipment = equipment;
+            this.product = product;
+            this.quantity = quantity;
+            this.equipment = equipment;
+            this.time = time;
         }
 
-        public Product Input { get; set; }
-
-        public double Quantity { get; set; }
-
-        public Equipment Equipment { get; set; }
-
-        // Agregado por Expert
-        public override double GetStepCost()
+        public override int GetCost()
         {
-            return
-                (this.Input.UnitCost * this.Quantity) +
-                (this.Equipment.HourlyCost * this.Time);
+            int equipmentCost = (time / 60) * equipment.HourlyCost; 
+            return (quantity * product.UnitCost) + equipmentCost;
         }
 
-        // Agregado por SRP
-        public override string GetTextToPrint()
+        public override string GetDescription()
         {
-            return $"{this.Quantity} de '{this.Input.Description}' " +
-                $"usando '{this.Equipment.Description}' durante {this.Time}";
+            return $"{quantity} de '{product.Name}' usando '{equipment.Name}' durante {time}";
         }
     }
 }

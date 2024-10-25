@@ -8,14 +8,13 @@ namespace Full_GRASP_And_SOLID
 {
     public class Product
     {
-        public Product(string description, double unitCost)
+        public string Name { get; set; }
+        public int UnitCost { get; set; }
+
+        public Product(string name, int unitCost)
         {
-            this.Description = description;
-            this.UnitCost = unitCost;
+            Name = name;
+            UnitCost = unitCost;
         }
-
-        public string Description { get; set; }
-
-        public double UnitCost { get; set; }
     }
 }
